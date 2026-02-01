@@ -71,6 +71,83 @@ a {
   background: rgba(255, 78, 205, 0.25);
   color: #ff4ecd;
 }
+/* =========================
+   MOBILE RESPONSIVE FIX
+   ========================= */
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .nav-menu {
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    background: #111;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.3s ease;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-menu li {
+    margin: 15px 0;
+  }
+
+  /* HERO */
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content h2 {
+    font-size: 20px;
+  }
+
+  /* ABOUT SECTION */
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 180px;
+    margin-bottom: 20px;
+  }
+
+  /* TECH STACK */
+  .tech-bars {
+    padding: 0 10px;
+  }
+
+  /* PROJECTS */
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* BLOG */
+  .blog-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* CONTACT */
+  .contact-cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* FOOTER */
+  .footer-contact a {
+    display: block;
+    margin: 8px 0;
+  }
+}
+
 
 /* ================= HERO ================= */
 .hero {

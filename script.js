@@ -43,7 +43,13 @@ const observer = new IntersectionObserver(
     });
   },
   { threshold: 0.2 }
-);
+); 
+const mobileMenu = document.getElementById("mobile-menu");
+const navMenu = document.querySelector(".nav-menu");
+
+mobileMenu.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+});
 
 techCards.forEach(card => observer.observe(card));
 
