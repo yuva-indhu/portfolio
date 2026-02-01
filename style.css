@@ -330,6 +330,7 @@ h2 {
   }
 }
 /* ================= TECH STACK ================= */
+<<<<<<< HEAD
 /* TECH STACK SECTION */
 .tech-stack-section {
   max-width: 900px;
@@ -371,15 +372,66 @@ h2 {
   transform: translateX(0);
   transition: transform 0.5s ease, box-shadow 0.3s ease, opacity 0.6s ease;
   cursor: pointer;
+=======
+.tech-stack {
+  margin: 80px auto;
+  max-width: 1200px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  background: linear-gradient(90deg, #ff4ecd, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tech-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+.tech-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+  border-radius: 20px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(255, 20, 147, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+.tech-card img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.tech-card h3 {
+  color: #fff;
+  font-weight: 500;
+>>>>>>> fd6e7c1806a1c4f87ba6c02977efe4d76f3af88d
 }
 
 /* Hover */
 .tech-card:hover {
+<<<<<<< HEAD
   transform: translateY(-5px) scale(1.05);
   box-shadow: 0 12px 40px rgba(255,78,205,0.6);
 }
 
 /* Slide-in Animations */
+=======
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 12px 40px rgba(255, 78, 205, 0.6);
+}
+
+/* Slide animations */
+>>>>>>> fd6e7c1806a1c4f87ba6c02977efe4d76f3af88d
 .slide-left {
   transform: translateX(-60px);
 }
@@ -388,6 +440,7 @@ h2 {
   transform: translateX(60px);
 }
 
+<<<<<<< HEAD
 /* Active when visible */
 .tech-card.show {
   opacity: 1;
@@ -407,10 +460,21 @@ h2 {
 .tech-additional p {
   font-size: 15px;
   color: #fff;
+=======
+.slide-up {
+  transform: translateY(60px);
+}
+
+/* Active (when visible) */
+.tech-card.show {
+  opacity: 1;
+  transform: translateX(0) translateY(0);
+>>>>>>> fd6e7c1806a1c4f87ba6c02977efe4d76f3af88d
 }
 
 /* Responsive */
 @media (max-width: 768px) {
+<<<<<<< HEAD
   .tech-bars {
     grid-template-columns: 1fr 1fr;
     gap: 15px;
@@ -428,6 +492,12 @@ h2 {
   }
 }
 
+=======
+  .section-title {
+    font-size: 2rem;
+  }
+}
+>>>>>>> fd6e7c1806a1c4f87ba6c02977efe4d76f3af88d
 /* ================= PROJECTS ================= */
 .projects {
   max-width: 1200px;
